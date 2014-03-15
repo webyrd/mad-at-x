@@ -89,4 +89,8 @@ We don't actually need to specify the lambda expressions---we can just specify t
   : (=/= ((_.0 . _.1)) ((_.0 . closure)) ((_.1 . closure))) (sym _.0 _.1)))
 ````
 
+TODO
+
 It would be very nice for the reifier to represent the range of possible values of the finite domain values as a constraint, instead of instantiating every possible combination of numberic values.  This would lead to much more interesting answers.
+
+Also, the finite domain solver for core.logic seems vastly faster than the implementation for cKanren.  It would be nice to have a faster solver, and be able to use larger values for the domain.
